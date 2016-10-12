@@ -24,7 +24,7 @@ test:
 	$(MEMORYCHECKER) $(TESTBIN)
 
 merge:
-	echo "Hello Travis!"
+	bash $(SCRIPTDIR)merge.sh merged.cpp files-list.txt
 
 clean :
 	rm -rf $(BINDIR)
